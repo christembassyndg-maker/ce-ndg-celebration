@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Christ Embassy NDG//Celebration Platform//EN
+BEGIN:VEVENT
+UID:pastor-matthew-celebration-20260731@christembassyndg
+DTSTAMP:20260708T170000Z
+DTSTART:20260731T230000Z
+DTEND:20260801T020000Z
+SUMMARY:Pastor Matthew Isesele Birthday Celebration
+LOCATION:2222 Avenue Dollard, LaSalle, QC H8N 1S6
+DESCRIPTION:Elegant Dress Code: Black & Gold. You are cordially invited to a special birthday celebration honoring Pastor Matthew Isesele.
+END:VEVENT
+END:VCALENDAR
