@@ -3,79 +3,97 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Royal Masquerade Celebration | Pastor Matthew Isesele</title>
-<meta name="description" content="The Royal Masquerade Celebration honoring Pastor Matthew Isesele. Elegant Black & Gold with Masquerade Mask.">
+<meta name="description" content="The Royal Masquerade Celebration honoring Pastor Matthew Isesele. Elegant Black & Gold with Masquerade Mask. RSVP Online.">
 <meta property="og:title" content="The Royal Masquerade Celebration">
-<meta property="og:description" content="Honoring Pastor Matthew Isesele • Friday, July 31, 2026 • Elegant Black & Gold with Masquerade Mask.">
+<meta property="og:description" content="Honoring Pastor Matthew Isesele • July 31, 2026 • Elegant Black & Gold with Masquerade Mask.">
 <meta property="og:image" content="assets/invitation.jpg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="locked">
-<div class="gold-dust"></div><div class="cursor-glow" id="cursorGlow"></div>
-<audio id="music" preload="auto" loop><source src="assets/church-music.mp3" type="audio/mpeg"></audio>
+<div class="gold-dust"></div>
+<audio id="music" loop preload="auto"><source src="assets/church-music.mp3" type="audio/mpeg"></audio>
 
-<div class="curtain" id="curtain"><div class="curtain-stage">
-<div class="curtain-line active">Some celebrations are attended...</div>
-<div class="curtain-line">Others are experienced.</div>
-<div class="curtain-line">A Life of Purpose</div>
-<div class="curtain-line">A Legacy of Excellence</div>
-<div class="curtain-line">A Shepherd After God's Heart</div>
-<button id="skipIntro" class="skip">Enter Celebration</button>
-</div></div>
+<div id="curtain" class="curtain">
+  <div>
+    <div class="line active">Some celebrations are attended...</div>
+    <div class="line">Others are experienced.</div>
+    <div class="line">Welcome to</div>
+    <div class="line">The Royal Masquerade Celebration</div>
+    <button id="skipIntro">Enter Celebration</button>
+  </div>
+</div>
 
-<header class="topbar"><a class="mark" href="#home">PMI</a><nav>
-<a href="#invitation">Invitation</a><a href="#details">Details</a><a href="#countdown">Countdown</a><a href="#rsvp">RSVP</a>
-</nav></header>
+<header>
+  <div class="logo">PMI</div>
+  <nav><a href="#invite">Invitation</a><a href="#details">Details</a><a href="#rsvp">RSVP</a></nav>
+</header>
 
 <main>
 <section class="hero" id="home">
-<div class="hero-inner" id="envelopeScene">
-<p class="eyebrow">Christ Embassy NDG • City of Grace Presents</p>
-<div class="royal-mask"><img src="assets/mask-1.jpg" alt="Royal masquerade mask"></div>
-<h1>The Royal<br>Masquerade<br>Celebration</h1>
-<p class="honoring">Honoring</p><h2>Pastor Matthew Isesele</h2>
-<p class="tagline">An Evening of Honor, Elegance & Celebration</p>
-<div class="envelope-area" id="envelope"><div class="envelope">
-<div class="letter-preview"><span>Royal Invitation</span></div><div class="flap"></div><div class="fold-left"></div><div class="fold-right"></div><div class="fold-front"></div>
-</div><button id="openSeal" class="seal" aria-label="Open invitation"><span class="crown">👑</span><span>Open Invitation</span></button></div>
-<p class="tap-note">Tap the gold seal to accept the royal invitation</p>
-</div>
+  <div id="opening">
+    <p class="eyebrow">Christ Embassy NDG • City of Grace Presents</p>
+    <img class="mask" src="assets/mask-hero.jpg" alt="Masquerade mask">
+    <h1>The Royal<br>Masquerade<br>Celebration</h1>
+    <p class="honoring">Honoring</p>
+    <h2>Pastor Matthew Isesele</h2>
+    <p class="tagline">An Evening of Honor, Elegance & Celebration</p>
+    <div class="dress-pill">🎭 Royal Masquerade Attire: Elegant Black • Gold Accents • Masquerade Mask</div>
 
-<div class="reveal-panel" id="mainInvite">
-<p class="eyebrow">You are cordially invited to</p>
-<h1>The Royal Masquerade Celebration</h1>
-<p class="subtitle">Honoring Pastor Matthew Isesele</p>
-<div class="hero-grid" id="invitation">
-<div class="portrait-card"><img src="assets/pastor-matthew.jpg" alt="Pastor Matthew Isesele" class="portrait"><div class="portrait-caption"><strong>Pastor Matthew Isesele</strong><span>A Visionary Leader • A Faithful Shepherd • A Kingdom Builder</span></div></div>
-<img src="assets/invitation.jpg" alt="Pastor Matthew birthday invitation" class="invite-card">
-</div>
-<div class="dress-card"><span class="mask-icon">🎭</span><div><strong>Royal Dress Code</strong><p>Elegant Black & Gold with a Masquerade Mask</p></div></div>
-<div class="actions">
-<a class="btn primary" href="#rsvp">Accept Your Royal Invitation</a><a class="btn" href="#details">View Details</a>
-<a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=2222+Avenue+Dollard+LaSalle+QC+H8N+1S6">Get Directions</a>
-<a class="btn" download="Pastor_Matthew_Birthday_Celebration.ics" href="Pastor_Matthew_Birthday_Celebration.ics">Add to Calendar</a>
-</div></div>
+    <div class="envelope" id="envelope">
+      <div class="letter">RSVP Online</div>
+      <div class="flap"></div>
+      <div class="front"></div>
+      <button id="seal" class="seal">👑<br><span>Open Invitation</span></button>
+    </div>
+    <p class="tap">Tap the gold seal to accept your royal invitation</p>
+  </div>
+
+  <div id="invite" class="invite-panel">
+    <p class="eyebrow">You are royally invited to</p>
+    <h1>The Royal Masquerade Celebration</h1>
+    <p class="tagline">Honoring Pastor Matthew Isesele</p>
+    <img class="invitation" src="assets/invitation.jpg" alt="Royal Masquerade Celebration Invitation">
+    <div class="actions">
+      <a class="btn gold" href="#rsvp">Accept Your Royal Invitation</a>
+      <a class="btn" href="#details">View Details</a>
+      <a class="btn" target="_blank" href="https://maps.google.com/?q=2222+Avenue+Dollard+LaSalle+QC+H8N+1S6">Get Directions</a>
+      <a class="btn" download="Pastor_Matthew_Birthday_Celebration.ics" href="Pastor_Matthew_Birthday_Celebration.ics">Add to Calendar</a>
+    </div>
+  </div>
 </section>
 
-<section class="section reveal details" id="details"><p class="eyebrow">Celebration Details</p><h2>An Evening of Honor</h2>
-<p>Join us for a royal masquerade evening as we celebrate a faithful shepherd and tremendous blessing to many lives.</p>
-<div class="detail-grid"><div><span>📅</span><strong>Date</strong><p>Friday, July 31, 2026</p></div><div><span>🕖</span><strong>Time</strong><p>7:00 PM</p></div><div><span>📍</span><strong>Venue</strong><p>2222 Avenue Dollard<br>LaSalle QC H8N 1S6</p></div><div><span>🎭</span><strong>Dress Code</strong><p>Elegant Black & Gold<br>with Masquerade Mask</p></div></div>
+<section id="details" class="section reveal">
+  <p class="eyebrow">Celebration Details</p>
+  <h2>An Evening of Honor, Elegance & Celebration</h2>
+  <div class="cards">
+    <div>📅<strong>Date</strong><p>Friday, July 31, 2026</p></div>
+    <div>🕖<strong>Time</strong><p>7:00 PM</p></div>
+    <div>📍<strong>Venue</strong><p>2222 Avenue Dollard<br>LaSalle QC H8N 1S6</p></div>
+    <div>🎭<strong>Dress Code</strong><p>Elegant Black & Gold<br>with Masquerade Mask</p></div>
+  </div>
 </section>
 
-<section class="section reveal" id="countdown"><p class="eyebrow">The countdown has begun</p><h2>Countdown to the Royal Celebration</h2>
-<div class="countdown"><div><strong id="days">--</strong><span>Days</span></div><div><strong id="hours">--</strong><span>Hours</span></div><div><strong id="minutes">--</strong><span>Minutes</span></div><div><strong id="seconds">--</strong><span>Seconds</span></div></div>
+<section class="section reveal">
+  <p class="eyebrow">The countdown has begun</p>
+  <h2>Countdown to the Royal Celebration</h2>
+  <div class="countdown"><div><strong id="days">--</strong><span>Days</span></div><div><strong id="hours">--</strong><span>Hours</span></div><div><strong id="minutes">--</strong><span>Minutes</span></div><div><strong id="seconds">--</strong><span>Seconds</span></div></div>
 </section>
 
-<section class="section reveal masquerade-gallery"><p class="eyebrow">The Masquerade Mood</p><h2>Elegant Black • Gold • Mask</h2><p>A refined black and gold atmosphere with a royal masquerade touch.</p>
-<div class="mask-gallery"><img src="assets/mask-1.jpg" alt="Black and gold mask inspiration"><img src="assets/mask-2.jpg" alt="Gold mask inspiration"><img src="assets/mask-3.jpg" alt="Masquerade mask inspiration"></div>
+<section class="section reveal">
+  <p class="eyebrow">The Masquerade Mood</p>
+  <h2>Elegant Black • Gold • Mask</h2>
+  <div class="gallery"><img src="assets/mask-1.jpg"><img src="assets/mask-2.jpg"><img src="assets/mask-hero.jpg"></div>
 </section>
 
-<section class="section reveal impact"><p class="eyebrow">A faithful shepherd</p><h2>Celebrating Pastor Matthew</h2><blockquote>“The righteous shall flourish like the palm tree...” <span>Psalm 92:12</span></blockquote><p>We gather with joy, gratitude, and honor to celebrate a visionary leader, a man of God, and a blessing to the Body of Christ.</p></section>
-
-<section class="section reveal" id="wishes"><p class="eyebrow">Birthday Wishes</p><h2>Leave a Message of Honor</h2><p>Guests may include birthday wishes and special messages through the RSVP form below.</p><a class="btn primary" href="#rsvp">Write My Birthday Wish</a></section>
-
-<section class="section reveal" id="rsvp"><p class="eyebrow">Accept your royal invitation</p><h2>Kindly RSVP Today</h2><p>Please confirm your attendance so we can prepare for you with excellence.</p><div class="rsvp-box"><iframe src="https://E69757DF6D6B1ED0.chmeetings.com/forms/962DEBAFF83F9015?isEmbed=true&bg=ffffff&p=15" scrolling="auto" loading="lazy" title="CHMeetings RSVP Form"></iframe></div></section>
+<section id="rsvp" class="section reveal">
+  <p class="eyebrow">RSVP Online</p>
+  <h2>Accept Your Royal Invitation</h2>
+  <p>Please confirm your attendance so we can prepare for you with excellence.</p>
+  <div class="rsvp"><iframe src="https://E69757DF6D6B1ED0.chmeetings.com/forms/962DEBAFF83F9015?isEmbed=true&bg=ffffff&p=15" title="CHMeetings RSVP Form" loading="lazy"></iframe></div>
+</section>
 </main>
-<footer><p>We eagerly await the pleasure of your company.</p><p>Christ Embassy NDG • City of Grace</p></footer>
-<button id="musicToggle" class="music-toggle">Music: On</button>
+
+<footer>We eagerly await the pleasure of your company.<br>Christ Embassy NDG • City of Grace</footer>
+<button id="musicBtn" class="music">Music: On</button>
 <script src="script.js"></script>
 </body></html>
