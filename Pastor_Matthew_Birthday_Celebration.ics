@@ -1,13 +1,13 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Christ Embassy NDG//Celebration Platform//EN
+PRODID:-//Christ Embassy NDG//Royal Masquerade Celebration//EN
 BEGIN:VEVENT
-UID:pastor-matthew-celebration-20260731@christembassyndg
-DTSTAMP:20260708T170000Z
+UID:pastor-matthew-royal-masquerade-20260731@christembassyndg
+DTSTAMP:20260710T170000Z
 DTSTART:20260731T230000Z
 DTEND:20260801T020000Z
-SUMMARY:Pastor Matthew Isesele Birthday Celebration
+SUMMARY:The Royal Masquerade Celebration Honoring Pastor Matthew Isesele
 LOCATION:2222 Avenue Dollard, LaSalle, QC H8N 1S6
-DESCRIPTION:Elegant Dress Code: Black & Gold. You are cordially invited to a special birthday celebration honoring Pastor Matthew Isesele.
+DESCRIPTION:Royal Dress Code: Elegant Black and Gold with a Masquerade Mask.
 END:VEVENT
 END:VCALENDAR
