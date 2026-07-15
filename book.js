@@ -66,11 +66,28 @@ document.getElementById('closeModal').onclick = () => {
 modal.addEventListener('click', e => { if(e.target === modal) document.getElementById('closeModal').click(); });
 
 const openBookLink = document.getElementById('openBook');
-openBookLink.addEventListener('click', () => {
-  document.getElementById('book').classList.add('opening');
-  document.querySelectorAll('.hidden').forEach(el => el.classList.add('visible'));
-  // Do not prevent the link's normal href="#wife" navigation.
-});
+const wifeSection = document.getElementById('wife');
+
+if (openBookLink && wifeSection) {
+  openBookLink.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    document.getElementById('book')?.classList.add('opening');
+
+    document.querySelectorAll('.hidden').forEach((section) => {
+      section.classList.add('visible');
+    });
+
+    requestAnimationFrame(() => {
+      wifeSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+
+    history.replaceState(null, '', '#wife');
+  });
+}
 
 document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
   document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
