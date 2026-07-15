@@ -65,10 +65,14 @@ document.getElementById('closeModal').onclick = () => {
 };
 modal.addEventListener('click', e => { if(e.target === modal) document.getElementById('closeModal').click(); });
 
-document.getElementById('openBook').addEventListener('click', () => {
+document.getElementById('openBook').addEventListener('click', (event) => {
+  event.preventDefault();
   document.getElementById('book').classList.add('opening');
   document.querySelectorAll('.hidden').forEach(el => el.classList.add('visible'));
-  setTimeout(() => document.getElementById('wife').scrollIntoView({behavior:'smooth'}), 700);
+  setTimeout(() => {
+    document.getElementById('wife').scrollIntoView({behavior:'smooth', block:'start'});
+    history.replaceState(null, '', '#wife');
+  }, 450);
 });
 
 document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
