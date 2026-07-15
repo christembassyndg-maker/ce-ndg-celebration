@@ -65,14 +65,11 @@ document.getElementById('closeModal').onclick = () => {
 };
 modal.addEventListener('click', e => { if(e.target === modal) document.getElementById('closeModal').click(); });
 
-document.getElementById('openBook').addEventListener('click', (event) => {
-  event.preventDefault();
+const openBookLink = document.getElementById('openBook');
+openBookLink.addEventListener('click', () => {
   document.getElementById('book').classList.add('opening');
   document.querySelectorAll('.hidden').forEach(el => el.classList.add('visible'));
-  setTimeout(() => {
-    document.getElementById('wife').scrollIntoView({behavior:'smooth', block:'start'});
-    history.replaceState(null, '', '#wife');
-  }, 450);
+  // Do not prevent the link's normal href="#wife" navigation.
 });
 
 document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
