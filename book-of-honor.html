@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Royal Book of Honor | Pastor Matthew Isesele</title>
+<meta name="description" content="A collection of heartfelt tributes celebrating Pastor Matthew Isesele.">
+<link rel="stylesheet" href="book.css">
+</head>
+<body>
+<div class="dust"></div>
+
+<header class="book-nav">
+  <a class="brand" href="#cover">PMI</a>
+  <nav>
+    <a href="#cover">Book Cover</a>
+    <a href="#wife">Royal Tribute</a>
+    <a href="#tributes">Tributes</a>
+    <a href="#originals">Original Messages</a>
+  </nav>
+</header>
+
+<main>
+<section id="cover" class="cover-section">
+  <div class="cover-card">
+    <div class="crown">♛</div>
+    <p class="eyebrow">Celebrating Pastor Matthew Isesele</p>
+    <h1>The Royal Book of Honor</h1>
+    <p class="subtitle">A collection of love, gratitude, prayers and heartfelt tributes</p>
+
+    <div class="book" id="book">
+      <div class="page left-page">
+        <div class="ornament">❦</div>
+        <h2>Compiled With Love</h2>
+        <p>
+          Presented by the family of <strong>Christ Embassy NDG – City of Grace</strong>
+          in celebration of a faithful shepherd, visionary leader and beloved Man of God.
+        </p>
+        <div class="line"></div>
+        <p class="script">With love, honor and deep gratitude.</p>
+      </div>
+      <div class="page right-page">
+        <div class="ornament">♛</div>
+        <h2>Dedication</h2>
+        <p>
+          May these tributes forever remind you of the lives you have touched,
+          the hearts you have inspired and the legacy you continue to build.
+        </p>
+        <blockquote>“The righteous shall flourish like the palm tree.”<span>Psalm 92:12</span></blockquote>
+        <button id="openBook">Open the Book of Honor</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="wife" class="section royal-feature hidden">
+  <p class="eyebrow">A Crown Beside the King</p>
+  <h2>A Tribute from His Beloved Wife</h2>
+  <div id="wifeFeature"></div>
+</section>
+
+<section id="tributes" class="section hidden">
+  <p class="eyebrow">Voices of Gratitude</p>
+  <h2>Messages of Love and Honor</h2>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="pastors">Pastors</button>
+    <button class="filter" data-filter="leaders">Leaders</button>
+    <button class="filter" data-filter="featured">Featured</button>
+    <button class="filter" data-filter="brethren">Brethren</button>
+    <button class="filter" data-filter="social">Beyond the Walls</button>
+  </div>
+
+  <div id="tributeGrid" class="tribute-grid"></div>
+</section>
+
+<section id="originals" class="section hidden">
+  <p class="eyebrow">Original Messages of Love</p>
+  <h2>Preserved in Their Original Form</h2>
+  <p class="intro">These original screenshots preserve the exact messages, expressions and memories shared by the brethren.</p>
+  <div id="originalGrid" class="original-grid"></div>
+</section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <button class="close" id="closeModal">×</button>
+  <div class="modal-inner">
+    <img id="modalImage" alt="">
+    <div>
+      <p class="eyebrow" id="modalRole"></p>
+      <h2 id="modalName"></h2>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+</div>
+
+<script src="tributes.js"></script>
+<script src="book.js"></script>
+</body>
+</html>
