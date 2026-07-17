@@ -1,99 +1,360 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Royal Masquerade Celebration | Pastor Matthew Isesele</title>
-<meta name="description" content="The Royal Masquerade Celebration honoring Pastor Matthew Isesele. Elegant Black & Gold with Masquerade Mask. RSVP Online.">
-<meta property="og:title" content="The Royal Masquerade Celebration">
-<meta property="og:description" content="Honoring Pastor Matthew Isesele • July 31, 2026 • Elegant Black & Gold with Masquerade Mask.">
-<meta property="og:image" content="assets/invitation.jpg">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>An Evening of Honor | Pastor Matthew Isesele</title>
+
+  <meta
+    name="description"
+    content="An Evening of Honor celebrating Pastor Matthew Isesele—a celebration of grace, leadership and legacy. Friday, July 31, 2026."
+  >
+
+  <meta property="og:title" content="An Evening of Honor">
+  <meta
+    property="og:description"
+    content="Celebrating Pastor Matthew Isesele • Friday, July 31, 2026 • Dress Code: Elegant Black & Gold."
+  >
+  <meta property="og:image" content="assets/invitation.jpg">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="locked">
-<div class="gold-dust"></div>
-<audio id="music" loop preload="auto"><source src="assets/church-music.mp3" type="audio/mpeg"></audio>
 
-<div id="curtain" class="curtain">
-  <div>
-    <div class="line active">Some celebrations are attended...</div>
-    <div class="line">Others are experienced.</div>
-    <div class="line">Welcome to</div>
-    <div class="line">The Royal Masquerade Celebration</div>
-    <button id="skipIntro">Enter Celebration</button>
-  </div>
-</div>
+  <div class="gold-dust"></div>
 
-<header>
-  <div class="logo">PMI</div>
-  <nav><a href="#invite">Invitation</a><a href="#details">Details</a><a href="#rsvp">RSVP</a></nav>
-</header>
+  <audio id="music" loop preload="auto">
+    <source src="assets/church-music.mp3" type="audio/mpeg">
+  </audio>
 
-<main>
-<section class="hero" id="home">
-  <div id="opening">
-    <p class="eyebrow">Christ Embassy NDG • City of Grace Presents</p>
-    <img class="mask" src="assets/mask-hero.jpg" alt="Masquerade mask">
-    <h1>The Royal<br>Masquerade<br>Celebration</h1>
-    <p class="honoring">Honoring</p>
-    <h2>Pastor Matthew Isesele</h2>
-    <p class="tagline">An Evening of Honor, Elegance & Celebration</p>
-    <div class="dress-pill">🎭 Royal Masquerade Attire: Elegant Black • Gold Accents • Masquerade Mask</div>
+  <!-- Opening Experience -->
+  <div id="curtain" class="curtain">
+    <div>
+      <div class="line active">Some celebrations are attended...</div>
+      <div class="line">Others are experienced.</div>
+      <div class="line">Welcome to</div>
+      <div class="line">An Evening of Honor</div>
 
-    <div class="envelope" id="envelope">
-      <div class="letter">RSVP Online</div>
-      <div class="flap"></div>
-      <div class="front"></div>
-      <button id="seal" class="seal">👑<br><span>Open Invitation</span></button>
-    </div>
-    <p class="tap">Tap the gold seal to accept your royal invitation</p>
-  </div>
-
-  <div id="invite" class="invite-panel">
-    <p class="eyebrow">You are royally invited to</p>
-    <h1>The Royal Masquerade Celebration</h1>
-    <p class="tagline">Honoring Pastor Matthew Isesele</p>
-    <img class="invitation" src="assets/invitation.jpg" alt="Royal Masquerade Celebration Invitation">
-    <div class="actions">
-      <a class="btn gold" href="#rsvp">Accept Your Royal Invitation</a>
-      <a class="btn" href="#details">View Details</a>
-      <a class="btn" target="_blank" href="https://maps.google.com/?q=2222+Avenue+Dollard+LaSalle+QC+H8N+1S6">Get Directions</a>
-      <a class="btn" download="Pastor_Matthew_Birthday_Celebration.ics" href="Pastor_Matthew_Birthday_Celebration.ics">Add to Calendar</a>
+      <button id="skipIntro">
+        Enter the Celebration
+      </button>
     </div>
   </div>
-</section>
 
-<section id="details" class="section reveal">
-  <p class="eyebrow">Celebration Details</p>
-  <h2>An Evening of Honor, Elegance & Celebration</h2>
-  <div class="cards">
-    <div>📅<strong>Date</strong><p>Friday, July 31, 2026</p></div>
-    <div>🕖<strong>Time</strong><p>7:00 PM</p></div>
-    <div>📍<strong>Venue</strong><p>2222 Avenue Dollard<br>LaSalle QC H8N 1S6</p></div>
-    <div>🎭<strong>Dress Code</strong><p>Elegant Black & Gold<br>with Masquerade Mask</p></div>
-  </div>
-</section>
+  <!-- Header -->
+  <header>
+    <div class="logo">PMI</div>
 
-<section class="section reveal">
-  <p class="eyebrow">The countdown has begun</p>
-  <h2>Countdown to the Royal Celebration</h2>
-  <div class="countdown"><div><strong id="days">--</strong><span>Days</span></div><div><strong id="hours">--</strong><span>Hours</span></div><div><strong id="minutes">--</strong><span>Minutes</span></div><div><strong id="seconds">--</strong><span>Seconds</span></div></div>
-</section>
+    <nav>
+      <a href="#invite">Invitation</a>
+      <a href="#details">Details</a>
+      <a href="#honor">Our Purpose</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="book-of-honor.html">Book of Honor</a>
+    </nav>
+  </header>
 
-<section class="section reveal">
-  <p class="eyebrow">The Masquerade Mood</p>
-  <h2>Elegant Black • Gold • Mask</h2>
-  <div class="gallery"><img src="assets/mask-1.jpg"><img src="assets/mask-2.jpg"><img src="assets/mask-hero.jpg"></div>
-</section>
+  <main>
 
-<section id="rsvp" class="section reveal">
-  <p class="eyebrow">RSVP Online</p>
-  <h2>Accept Your Royal Invitation</h2>
-  <p>Please confirm your attendance so we can prepare for you with excellence.</p>
-  <div class="rsvp"><iframe src="https://E69757DF6D6B1ED0.chmeetings.com/forms/962DEBAFF83F9015?isEmbed=true&bg=ffffff&p=15" title="CHMeetings RSVP Form" loading="lazy"></iframe></div>
-</section>
-</main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
 
-<footer>We eagerly await the pleasure of your company.<br>Christ Embassy NDG • City of Grace</footer>
-<button id="musicBtn" class="music">Music: On</button>
-<script src="script.js"></script>
+      <div id="opening">
+
+        <p class="eyebrow">
+          Christ Embassy NDG • City of Grace Presents
+        </p>
+
+        <div class="royal-emblem" aria-hidden="true">
+          👑
+        </div>
+
+        <h1>
+          An Evening<br>
+          of Honor
+        </h1>
+
+        <p class="honoring">Celebrating</p>
+
+        <h2>Pastor Matthew Isesele</h2>
+
+        <p class="tagline">
+          A Celebration of Grace, Leadership & Legacy
+        </p>
+
+        <div class="dress-pill">
+          Dress Code: Elegant Black & Gold
+        </div>
+
+        <div class="envelope" id="envelope">
+          <div class="letter">RSVP Online</div>
+          <div class="flap"></div>
+          <div class="front"></div>
+
+          <button id="seal" class="seal">
+            👑
+            <br>
+            <span>Open Invitation</span>
+          </button>
+        </div>
+
+        <p class="tap">
+          Tap the gold seal to open your invitation
+        </p>
+
+      </div>
+
+      <!-- Invitation Panel -->
+      <div id="invite" class="invite-panel">
+
+        <p class="eyebrow">
+          You are cordially invited to
+        </p>
+
+        <h1>An Evening of Honor</h1>
+
+        <p class="tagline">
+          Celebrating Pastor Matthew Isesele
+        </p>
+
+        <div class="invitation-message">
+          <p>
+            Join us for a distinguished evening of thanksgiving,
+            celebration and heartfelt honor as we recognize a remarkable
+            servant of God.
+          </p>
+
+          <p>
+            Together, we will celebrate Pastor Matthew Isesele’s life,
+            leadership, unwavering commitment to the Gospel and the
+            countless lives impacted through his ministry.
+          </p>
+
+          <blockquote>
+            “Honour to whom honour is due.”
+            <span>— Romans 13:7</span>
+          </blockquote>
+        </div>
+
+        <div class="actions">
+
+          <a class="btn gold" href="#rsvp">
+            Confirm Your Attendance
+          </a>
+
+          <a class="btn" href="#details">
+            View Event Details
+          </a>
+
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://maps.google.com/?q=2222+Avenue+Dollard+LaSalle+QC+H8N+1S6"
+          >
+            Get Directions
+          </a>
+
+          <a
+            class="btn"
+            download="Pastor_Matthew_Birthday_Celebration.ics"
+            href="Pastor_Matthew_Birthday_Celebration.ics"
+          >
+            Add to Calendar
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Event Details -->
+    <section id="details" class="section reveal">
+
+      <p class="eyebrow">Celebration Details</p>
+
+      <h2>
+        An Evening of Grace, Leadership & Legacy
+      </h2>
+
+      <div class="cards">
+
+        <div>
+          <span class="card-icon">📅</span>
+          <strong>Date</strong>
+          <p>Friday, July 31, 2026</p>
+        </div>
+
+        <div>
+          <span class="card-icon">🕖</span>
+          <strong>Time</strong>
+          <p>7:00 PM</p>
+        </div>
+
+        <div>
+          <span class="card-icon">📍</span>
+          <strong>Venue</strong>
+          <p>
+            2222 Avenue Dollard
+            <br>
+            LaSalle, QC H8N 1S6
+          </p>
+        </div>
+
+        <div>
+          <span class="card-icon">✨</span>
+          <strong>Dress Code</strong>
+          <p>
+            Elegant Black & Gold
+            <br>
+            Formal Attire
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Purpose of the Evening -->
+    <section id="honor" class="section reveal honor-section">
+
+      <p class="eyebrow">The Heart of the Celebration</p>
+
+      <h2>Why We Gather</h2>
+
+      <div class="honor-copy">
+
+        <p>
+          An Evening of Honor is a celebration of God’s faithfulness
+          demonstrated through the life and ministry of Pastor Matthew
+          Isesele.
+        </p>
+
+        <p>
+          As family, friends and brethren gather together, we come with
+          grateful hearts to honor his dedication to the Gospel, his
+          servant leadership and the many lives transformed through his
+          ministry.
+        </p>
+
+        <p>
+          Above all, this evening is an expression of thanksgiving to God,
+          who continues to work mightily through His servant.
+        </p>
+
+      </div>
+
+      <a class="btn gold" href="book-of-honor.html">
+        Enter the Royal Book of Honor
+      </a>
+
+    </section>
+
+    <!-- Countdown -->
+    <section class="section reveal">
+
+      <p class="eyebrow">The Countdown Has Begun</p>
+
+      <h2>Countdown to An Evening of Honor</h2>
+
+      <div class="countdown">
+
+        <div>
+          <strong id="days">--</strong>
+          <span>Days</span>
+        </div>
+
+        <div>
+          <strong id="hours">--</strong>
+          <span>Hours</span>
+        </div>
+
+        <div>
+          <strong id="minutes">--</strong>
+          <span>Minutes</span>
+        </div>
+
+        <div>
+          <strong id="seconds">--</strong>
+          <span>Seconds</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Celebration Values -->
+    <section class="section reveal">
+
+      <p class="eyebrow">The Spirit of the Evening</p>
+
+      <h2>Honor • Excellence • Thanksgiving</h2>
+
+      <div class="cards values">
+
+        <div>
+          <span class="card-icon">👑</span>
+          <strong>Honor</strong>
+          <p>
+            Celebrating a life of faithful service and spiritual leadership.
+          </p>
+        </div>
+
+        <div>
+          <span class="card-icon">✨</span>
+          <strong>Excellence</strong>
+          <p>
+            Creating a beautiful and memorable experience worthy of the occasion.
+          </p>
+        </div>
+
+        <div>
+          <span class="card-icon">🙏</span>
+          <strong>Thanksgiving</strong>
+          <p>
+            Giving glory to God for His grace, faithfulness and mighty works.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section reveal">
+
+      <p class="eyebrow">RSVP Online</p>
+
+      <h2>Confirm Your Attendance</h2>
+
+      <p>
+        Please confirm your attendance so we can prepare to receive you
+        with excellence.
+      </p>
+
+      <div class="rsvp">
+        <iframe
+          src="https://E69757DF6D6B1ED0.chmeetings.com/forms/962DEBAFF83F9015?isEmbed=true&bg=ffffff&p=15"
+          title="An Evening of Honor RSVP Form"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    We eagerly await the pleasure of your company.
+    <br>
+    Christ Embassy NDG • City of Grace
+  </footer>
+
+  <button id="musicBtn" class="music">
+    Music: On
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
 </body></html>
